@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Art Of Tech - متجر الألعاب الإلكترونية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== BANNER SECTION ==================== -->
+    <section class="banner-section">
+        <div class="banner-container">
+            <img id="bannerImage" src="assets/banner1.png" alt="Banner" class="banner-image">
+        </div>
+    </section>
+
+    <!-- ==================== STORE SECTION ==================== -->
+    <section class="store-section">
+        <div class="store-header">
+            <h2>متجرنا</h2>
+        </div>
+
+        <div class="products-container">
+            <!-- Product 1: Freefire Diamond -->
+            <div class="product-card" onclick="openModal('modal-freefire')">
+                <div class="product-image">
+                    <img src="assets/freefire.png" alt="Freefire Diamond">
+                </div>
+                <div class="product-info">
+                    <h3>Freefire Diamond</h3>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" onclick="openModal('modal-product2')">
+                <div class="product-image placeholder">
+                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                </div>
+                <div class="product-info">
+                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" onclick="openModal('modal-product3')">
+                <div class="product-image placeholder">
+                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                </div>
+                <div class="product-info">
+                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" onclick="openModal('modal-product4')">
+                <div class="product-image placeholder">
+                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                </div>
+                <div class="product-info">
+                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" onclick="openModal('modal-product5')">
+                <div class="product-image placeholder">
+                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                </div>
+                <div class="product-info">
+                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" onclick="openModal('modal-product6')">
+                <div class="product-image placeholder">
+                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                </div>
+                <div class="product-info">
+                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EVENTS SECTION ==================== -->
+    <section class="events-section">
+        <div class="events-header">
+            <h2>الأحداث - Events</h2>
+            <p>هنا ستظهر لكم كل الأحداث والفعاليات والمسابقات والبطولات القادمة في كافة أنواع الألعاب والرياضات الإلكترونية</p>
+            <div class="coming-soon">COMING SOON</div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWS SECTION ==================== -->
+    <section class="news-section">
+        <div class="news-header">
+            <h2>الأخبار</h2>
+        </div>
+        <div class="news-container" id="newsContainer">
+            <!-- NEWS ARTICLES WILL BE ADDED HERE -->
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2>معلومات عنا والتواصل معنا</h2>
+        </div>
+        <div class="social-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+21628351884" target="_blank" class="social-icon">
+                <img src="assets/whatsapp.png" alt="WhatsApp">
+                <p>للتواصل معنا عبر الواتساب</p>
+            </a>
+
+            <!-- Facebook Page -->
+            <a href="https://www.facebook.com/profile.php?id=61577298907703" target="_blank" class="social-icon">
+                <img src="assets/facebook.png" alt="Facebook">
+                <p>صفحتنا عبر الفيسبوك</p>
+            </a>
+
+            <!-- YouTube Channel 1 -->
+            <a href="https://www.youtube.com/@RidhaSnow" target="_blank" class="social-icon">
+                <img src="assets/youtube.png" alt="YouTube">
+                <p>قناتنا الربحية على يوتيوب</p>
+            </a>
+
+            <!-- YouTube Channel 2 -->
+            <a href="https://www.youtube.com/@snow-RG" target="_blank" class="social-icon">
+                <img src="assets/youtube2.png" alt="YouTube Gaming">
+                <p>قناتنا الخاصة بالألعاب</p>
+            </a>
+
+            <!-- Facebook Personal -->
+            <a href="https://www.facebook.com/ridha.bouabidi.245785/" target="_blank" class="social-icon">
+                <img src="assets/facebook2.png" alt="Facebook Personal">
+                <p>للتواصل معنا عبر فيسبوك</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== MODAL: FREEFIRE ==================== -->
+    <div id="modal-freefire" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-freefire')">&times;</span>
+            <div class="modal-body">
+                <h2>Freefire Diamond</h2>
+                <div class="pricing-table">
+                    <div class="price-item">
+                        <span class="amount">100 ديامون</span>
+                        <span class="price">=</span>
+                        <span class="cost">5 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">200 ديامون</span>
+                        <span class="price">=</span>
+                        <span class="cost">10 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">500 ديامون</span>
+                        <span class="price">=</span>
+                        <span class="cost">22.5 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">1000 ديامون</span>
+                        <span class="price">=</span>
+                        <span class="cost">45 د</span>
+                    </div>
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: PRODUCT 2 ==================== -->
+    <div id="modal-product2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-product2')">&times;</span>
+            <div class="modal-body">
+                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <div class="pricing-table">
+                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: PRODUCT 3 ==================== -->
+    <div id="modal-product3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-product3')">&times;</span>
+            <div class="modal-body">
+                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <div class="pricing-table">
+                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: PRODUCT 4 ==================== -->
+    <div id="modal-product4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-product4')">&times;</span>
+            <div class="modal-body">
+                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <div class="pricing-table">
+                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: PRODUCT 5 ==================== -->
+    <div id="modal-product5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-product5')">&times;</span>
+            <div class="modal-body">
+                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <div class="pricing-table">
+                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: PRODUCT 6 ==================== -->
+    <div id="modal-product6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-product6')">&times;</span>
+            <div class="modal-body">
+                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <div class="pricing-table">
+                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                </div>
+                <div class="payment-method">
+                    <img src="assets/d17.png" alt="D17" class="payment-icon">
+                    <span>طريقة الدفع: D17</span>
+                </div>
+                <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
