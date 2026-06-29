@@ -194,7 +194,7 @@ body {
 
 .event-image {
     width: 100%;
-    height: 250px;
+    aspect-ratio: 750 / 450;  /* النسبة 16:9 تقريباً */
     background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
     display: flex;
     align-items: center;
