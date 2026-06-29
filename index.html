@@ -6,6 +6,7 @@
     <title>Snow Art Of Tech - متجر الألعاب الإلكترونية</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- ==================== BANNER SECTION ==================== -->
@@ -18,6 +19,7 @@
     <!-- ==================== STORE SECTION ==================== -->
     <section class="store-section">
         <div class="store-header">
+            <i class="fas fa-shopping-cart store-icon"></i>
             <h2>متجرنا</h2>
         </div>
 
@@ -32,53 +34,53 @@
                 </div>
             </div>
 
-            <!-- Product 2 -->
+            <!-- Product 2: PUBG UC -->
             <div class="product-card" onclick="openModal('modal-product2')">
-                <div class="product-image placeholder">
-                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                <div class="product-image">
+                    <img src="assets/pbg.png" alt="PUBG UC">
                 </div>
                 <div class="product-info">
-                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                    <h3>PUBG UC</h3>
                 </div>
             </div>
 
-            <!-- Product 3 -->
+            <!-- Product 3: eFootball -->
             <div class="product-card" onclick="openModal('modal-product3')">
-                <div class="product-image placeholder">
-                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                <div class="product-image">
+                    <img src="assets/efootball.png" alt="eFootball">
                 </div>
                 <div class="product-info">
-                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                    <h3>eFootball</h3>
                 </div>
             </div>
 
-            <!-- Product 4 -->
+            <!-- Product 4: Tiktok Coins -->
             <div class="product-card" onclick="openModal('modal-product4')">
-                <div class="product-image placeholder">
-                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                <div class="product-image">
+                    <img src="assets/tiktok.png" alt="Tiktok Coins">
                 </div>
                 <div class="product-info">
-                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                    <h3>Tiktok Coins</h3>
                 </div>
             </div>
 
-            <!-- Product 5 -->
+            <!-- Product 5: Sponsoring -->
             <div class="product-card" onclick="openModal('modal-product5')">
-                <div class="product-image placeholder">
-                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                <div class="product-image">
+                    <img src="assets/sponsoring.png" alt="Sponsoring">
                 </div>
                 <div class="product-info">
-                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                    <h3>Sponsoring - إعلان ممول</h3>
                 </div>
             </div>
 
-            <!-- Product 6 -->
+            <!-- Product 6: Other Services -->
             <div class="product-card" onclick="openModal('modal-product6')">
-                <div class="product-image placeholder">
-                    <span><!-- PLACEHOLDER: ADD IMAGE HERE --></span>
+                <div class="product-image">
+                    <img src="assets/other.png" alt="Other Services">
                 </div>
                 <div class="product-info">
-                    <h3><!-- PLACEHOLDER: ADD PRODUCT NAME --></h3>
+                    <h3>Other Services</h3>
                 </div>
             </div>
         </div>
@@ -89,7 +91,19 @@
         <div class="events-header">
             <h2>الأحداث - Events</h2>
             <p>هنا ستظهر لكم كل الأحداث والفعاليات والمسابقات والبطولات القادمة في كافة أنواع الألعاب والرياضات الإلكترونية</p>
-            <div class="coming-soon">COMING SOON</div>
+        </div>
+
+        <div class="events-container">
+            <!-- Event 1: Freefire Tournament -->
+            <div class="event-card" onclick="openModal('modal-event-freefire')">
+                <div class="event-image">
+                    <img src="assets/eventfreefire.png" alt="بطولة مدنين في لعبة Freefire">
+                </div>
+                <div class="event-info">
+                    <h3>بطولة مدنين في لعبة Freefire</h3>
+                    <button class="join-btn">الانضمام</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -178,14 +192,43 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL: PRODUCT 2 ==================== -->
+    <!-- ==================== MODAL: PRODUCT 2 (PUBG UC) ==================== -->
     <div id="modal-product2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-product2')">&times;</span>
             <div class="modal-body">
-                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <h2>PUBG UC</h2>
                 <div class="pricing-table">
-                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                    <div class="price-item">
+                        <span class="amount">60 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">5 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">325 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">22 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">660 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">40 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">1800 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">95 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">3850 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">185 د</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="amount">8100 UC</span>
+                        <span class="price">=</span>
+                        <span class="cost">360 د</span>
+                    </div>
                 </div>
                 <div class="payment-method">
                     <img src="assets/d17.png" alt="D17" class="payment-icon">
@@ -196,14 +239,18 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL: PRODUCT 3 ==================== -->
+    <!-- ==================== MODAL: PRODUCT 3 (eFootball) ==================== -->
     <div id="modal-product3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-product3')">&times;</span>
             <div class="modal-body">
-                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <h2>eFootball</h2>
                 <div class="pricing-table">
-                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                    <div class="price-item">
+                        <span class="amount">1 دولار في اللعبة</span>
+                        <span class="price">=</span>
+                        <span class="cost">4 د</span>
+                    </div>
                 </div>
                 <div class="payment-method">
                     <img src="assets/d17.png" alt="D17" class="payment-icon">
@@ -214,14 +261,18 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL: PRODUCT 4 ==================== -->
+    <!-- ==================== MODAL: PRODUCT 4 (Tiktok Coins) ==================== -->
     <div id="modal-product4" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-product4')">&times;</span>
             <div class="modal-body">
-                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
+                <h2>Tiktok Coins</h2>
                 <div class="pricing-table">
-                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                    <div class="price-item">
+                        <span class="amount">1000 Coins</span>
+                        <span class="price">=</span>
+                        <span class="cost">45 د</span>
+                    </div>
                 </div>
                 <div class="payment-method">
                     <img src="assets/d17.png" alt="D17" class="payment-icon">
@@ -232,14 +283,15 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL: PRODUCT 5 ==================== -->
+    <!-- ==================== MODAL: PRODUCT 5 (Sponsoring) ==================== -->
     <div id="modal-product5" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-product5')">&times;</span>
             <div class="modal-body">
-                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
-                <div class="pricing-table">
-                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                <h2>Sponsoring - إعلان ممول</h2>
+                <div class="sponsoring-content">
+                    <p>يمكنك إنشاء حملة إعلانية على الفيسبوك أو تيكتوك ابتداءً من <strong>45د</strong> لمدة تتراوح من يوم إلى 5 أيام</p>
+                    <p><strong>لمزيد التفاصيل تواصل معنا</strong></p>
                 </div>
                 <div class="payment-method">
                     <img src="assets/d17.png" alt="D17" class="payment-icon">
@@ -250,14 +302,19 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL: PRODUCT 6 ==================== -->
+    <!-- ==================== MODAL: PRODUCT 6 (Other Services) ==================== -->
     <div id="modal-product6" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-product6')">&times;</span>
             <div class="modal-body">
-                <h2><!-- PLACEHOLDER: PRODUCT NAME --></h2>
-                <div class="pricing-table">
-                    <!-- PLACEHOLDER: ADD PRICING HERE -->
+                <h2>Other Services</h2>
+                <div class="services-list">
+                    <div class="service-item">برمجة مواقع ومتاجر إلكترونية</div>
+                    <div class="service-item">الاعتناء بصفحات الفيسبوك وإدارة الأعمال</div>
+                    <div class="service-item">تصليح الهواتف والحواسيب</div>
+                    <div class="service-item">بيع إكسسوارات الهواتف والحواسيب</div>
+                    <div class="service-item">تصوير كليبات أغاني</div>
+                    <div class="service-item">زيادة متابعين حسابات السوشيال</div>
                 </div>
                 <div class="payment-method">
                     <img src="assets/d17.png" alt="D17" class="payment-icon">
@@ -265,6 +322,96 @@
                 </div>
                 <a href="https://wa.me/+21628351884" target="_blank" class="contact-btn">تواصل معنا للشراء</a>
             </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL: EVENT (FREEFIRE TOURNAMENT) ==================== -->
+    <div id="modal-event-freefire" class="modal event-modal">
+        <div class="modal-content event-content">
+            <span class="close" onclick="closeModal('modal-event-freefire')">&times;</span>
+            <div class="modal-body event-body">
+                <h2>بطولة مدنين في لعبة Freefire</h2>
+                
+                <div class="event-intro">
+                    <p>ستنطلق بطولة الفرق الخاصة بلعبة Freefire يوم <strong>15 جويلية 2026</strong> وسيتم فتح باب التسجيل يوم <strong>1 جويلية</strong></p>
+                    <p>على كل الفرق الراغبة في الانضمام إلى هذه البطولة قراءة الشروط والقواعد الخاصة بالبطولة والامتثال للشروط والاطلاع على كل الخطوات ومراحل النظام الذي سيتم تسييره في التفاعلية الأولى من نوعها</p>
+                </div>
+
+                <div class="rules-section">
+                    <h3>القواعد والشروط:</h3>
+                    
+                    <div class="rule-item">
+                        <strong>• عدد اللاعبين:</strong>
+                        <p>كل فريق سيتكون من 3 لاعبين</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• الدرجات:</strong>
+                        <p>ستكون هناك درجتان من البطولة Division 1 و Division 2 وكل درجة ستسع لـ 10 فرق. كل فريق سيحتل مرتبة من هذه الدرجات حسب الترتيب الذي سيتحصل عليه خلال مرحلة التصنيف الصيفية</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• مرحلة التصنيف:</strong>
+                        <p>ستكون أول خطوة لضمان تحديد مراتب الفرق في الدرجتين الأولى والثانية من خلال تقسيم كل الفرق إلى مجموعات للتنافس من أجل التمركز في الدرجة الأولى أو الدرجة الثانية</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• تمركز الفرق في الدرجات:</strong>
+                        <p>ستكون هناك 5 مجموعات (1/2/3/4/5) كل مجموعة ستتكون من 4 فرق سيتنافسون من أجل احتلال الصدارة في مجموعتهم. كل فريق من كل مجموعة يستلقي بخصمه من نفس المجموعة ويتنافسون من أجل 3 نقاط للفريق الفائز و 0 نقاط للفريق الخاسر</p>
+                        <p>كل فريق سيلعب 3 مباريات بالتالي سيلتقي ضد كل فريق مجموعته وجمع النقاط من خلال الفوز. الفريقان صاحبا الصدارة من كل مجموعة سيضمنان رسمياً التمركز في ال Division 1 والفريقان صاحبا المرتبة الثالثة والرابعة سيتمركزان رسمياً في ال Division 2</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• طريق الأساطير:</strong>
+                        <p>البطولة ستبدأ بعد انتهاء مرحلة التصنيف. سيكون هناك 10 فرق في الدرجة الأولى سيتنافسون على حمل اللقب من خلال تصدر الجدول الترتيبي بعد انتهاء البطولة أو إمكانية نزول آخر فريقين في الترتيب إلى الدرجة الثانية</p>
+                        <p>بالتالي الفريقان صاحبا الترتيب الأول والثاني في الدرجة الثانية سيتنافسان مع الفريقين صاحبي الترتيب التاسع والعاشر من الدرجة الأولى من أجل مرحلة الصعود والهبوط خلال مباراتين حاسمتين تقرران مصير الأربع فرق إما التشبث بالدرجة الأولى أو النزول للدرجة الثانية وإعطاء الأماكن للفرق الصاعدة من الدرجة الثانية</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• الجوائز:</strong>
+                        <p>الجوائز ستكون فقط لأصحاب الترتيب الأول والثاني من الدرجة الأولى وستحدد قيمتها حسب سعر الاشتراك لكل فريق</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• الخطوة الأولى:</strong>
+                        <p>على كل شخص يريد تكوين فريق والمشاركة في هذه الفعالية أن يكون حامل مسؤولية الفريق والامتثال للشروط وعدم مخالفة القوانين ويكون المتحدث الرسمي باسم الفريق والمتصرف الأول في تكوين فريق ناجح أو تلقي عقوبة مسح الفريق من البطولة ووضع اسمه في القائمة السوداء ومنعه ومنع فريقه من المشاركة مجدداً ونهائياً</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• الغش والتهكير:</strong>
+                        <p>أي فريق يستعمل أي أسلوب غش أو تهكير سيتم طردهم مباشرة من البطولة ومنعهم من المشاركة نهائياً. الغش المتمثل في جعل شخص آخر يلعب مكانك سيتسبب في طرد اللاعب وفرض عقوبات على الفريق تبدأ من خصم النقاط إلى أقصى عقوبة وهي حل الفريق وطرده من البطولة</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• كيفية المشاركة:</strong>
+                        <p>جهز فريقك المثالي واختر اسماً مناسباً له وشعار (logo). الفريق يجب أن يتكون من 3 أشخاص رسميين كلاعبين أساسيين يمنع تغييرهم نهائياً بدون علم الجهة المنظمة للبطولة ثم الضغط على زر الانضمام في الأسفل والتواصل مع الفريق التقني لإضافة فريقك إلى قائمة الفرق المشاركة واتباع التعليمات التي سيتم طلبها منك</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• حظر التضارب:</strong>
+                        <p>لا يمكن للاعب الواحد اللعب داخل فريقين ولا يمكن لصاحب الفريق أن يدير فريقين فهذا سيعتبر اختراق للقواعد وسيتم المعاقبة عليه</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• سعر الاشتراك والجوائز:</strong>
+                        <p>سيكون سعر الاشتراك في البطولة كأول مرة لهذه الفعالية سعر رمزي وستكون الجوائز أيضاً رمزية نظراً لمراعاة الظروف كبداية جديدة في عالم الرياضات الإلكترونية ويتمثل في <strong>20د</strong> لكل فريق كسعر الاشتراك</p>
+                        <p><strong>الفريق الفائز بصاحب اللقب سيحصل على جائزة قيمتها 2100 ديامون</strong></p>
+                        <p><strong>صاحب الترتيب الثاني 600 ديامون</strong></p>
+                        <p>وفي المستقبل عندما تتحسن جودة الفرق ستكون الاشتراكات أقوى والجوائز أفضل</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• صلاحية الاشتراك:</strong>
+                        <p>الاشتراك صالح لمدة موسم واحد فقط</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <strong>• الفرق المتأخرة:</strong>
+                        <p>الفرق القادمة للتسجيل بعد انتهاء مرحلة التصنيف ستضم إلى الدرجة الثالثة بعد جمع 8 فرق كمجموع جملي</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://wa.me/+21628351884" target="_blank" class="event-join-btn">الانضمام الآن</a>
         </div>
     </div>
 
